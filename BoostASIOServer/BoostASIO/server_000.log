@@ -1,0 +1,4 @@
+[2021-03-17 23:15:25.860159]: Session::processRead(10), in_avail = 10, size = 10, max_size = 4294967295.
+[2021-03-17 23:17:34.504070]: a.txt size is 18, tellg = -1
+[2021-03-17 23:18:25.533868]: Session::processRead write 0 bytes.
+[2021-03-17 23:23:51.484287]: Session::doReadFileContent recv 18 bytes
