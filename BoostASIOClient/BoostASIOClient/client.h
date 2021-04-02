@@ -41,9 +41,9 @@ void Client::writeBuffer(Buffer& t_buffer)
 {
 	boost::asio::async_write(m_socket,
 		t_buffer,
-		[this](boost::system::error_code ec, size_t /*length*/)
+		[this](boost::system::error_code ec, size_t length)
 	{
-		std::cout << "Inside writeBuffer callback, size_t :" << size_t << endl;
+		std::cout << "Inside writeBuffer callback, size_t :" << length << endl;
 		doWriteFile(ec);
 	});
 }
