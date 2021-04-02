@@ -43,6 +43,7 @@ void Client::writeBuffer(Buffer& t_buffer)
 		t_buffer,
 		[this](boost::system::error_code ec, size_t /*length*/)
 	{
+		std::cout << "Inside writeBuffer callback, size_t" << size_t << endl;
 		doWriteFile(ec);
 	});
 }
